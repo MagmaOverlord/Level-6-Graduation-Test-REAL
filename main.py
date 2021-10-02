@@ -9,10 +9,10 @@ app = Flask(__name__)
 app.secret_key = "sadklhjbgf lkaherbg likj"
 
 db = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="greatkid5000",
-    database="sys"
+    host="us-cdbr-east.cleardb.com",
+    user="bd819c66fe2caf",
+    password="eab8bb40",
+    database="heroku_ef50e854f7a3433"
 )
 
 cursor = db.cursor()
@@ -78,4 +78,4 @@ def logout():
     return redirect("/login")
 
 if __name__ == "__main__":
-    app.run("localhost", 8080)
+    app.run()

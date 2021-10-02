@@ -41,7 +41,7 @@ def login():
         if len(result) == 0:
             return render_template("login.html", message = "Username or password is incorrect")
         else:
-            session["username"] == username
+            session["username"] = username
             return redirect("/")
     else:
         return render_template("login.html")

@@ -2,6 +2,8 @@
 
 from flask import Flask, render_template, request, session, redirect
 
+import gunicorn
+
 import mysql.connector
 
 app = Flask(__name__)
